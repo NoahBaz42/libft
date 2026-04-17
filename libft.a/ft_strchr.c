@@ -1,0 +1,23 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: nbaz-sil <nbaz-sil@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/04/13 11:27:59 by nbaz-sil          #+#    #+#             */
+/*   Updated: 2026/04/14 19:28:21 by nbaz-sil         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+char *ft_strchr(const char *s, int c)
+{
+	
+}
+/*  The  strchr() function returns a pointer to the first occurrence of the
+       character c in the string s.
+   The strchr() and strrchr() functions return a pointer  to  the  matched
+       character  or NULL if the character is not found.  The terminating null
+       byte is considered part of the string, so that if  c  is  specified  as
+       '\0', these functions return a pointer to the terminator.
+ */
