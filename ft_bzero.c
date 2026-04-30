@@ -6,14 +6,34 @@
 /*   By: nbaz-sil <nbaz-sil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/13 11:26:28 by nbaz-sil          #+#    #+#             */
-/*   Updated: 2026/04/14 19:26:30 by nbaz-sil         ###   ########.fr       */
+/*   Updated: 2026/04/27 19:49:51 by nbaz-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdlib.h>
+#include <stdio.h>
+
 void ft_bzero(void *s, size_t n)
 {
-	
+	unsigned char* p;
+       
+       p = s;
+       while(n > 0)
+       {
+              *p++ = 0;
+              n--;
+       }
 }
+
+// Em vez de 21, usar ft_strlen();
+int main(void)
+{
+       //unsigned int a = 0;
+       char str[]= "ola isto e uma string";
+       ft_bzero(str, 21);
+       printf("%s\n", str);
+       return(0);
+}	
 /* DESCRIPTION
        The  bzero()  function  erases  the  data  in the n bytes of the memory
        starting at the location pointed to by s, by writing zeros (bytes  con‐

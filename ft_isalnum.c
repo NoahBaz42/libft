@@ -1,24 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
+/*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nbaz-sil <nbaz-sil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/13 11:28:44 by nbaz-sil          #+#    #+#             */
-/*   Updated: 2026/04/27 17:10:02 by nbaz-sil         ###   ########.fr       */
+/*   Created: 2026/04/13 11:27:16 by nbaz-sil          #+#    #+#             */
+/*   Updated: 2026/04/30 03:42:07 by nbaz-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void ft_lstadd_front(t_list **lst, t_list *new)
+int	ft_isalnum(int c)
 {
-	
+	if (c >= 'A' && c <= 'Z' | c >= 'a' && c <= 'z' | c >= '0' && c <= '9')
+		return (1);
+	else
+		return (0);
 }
-/* Parameters
- lst: The address of a pointer to the first node of
-a list.
-new: The address of a pointer to the node to be
-added.
-Return Value None
-External Function None
-Description Adds the node ’new’ at the beginning of the list. */
+
+/* 
+	isalnum() checks for an alphanumeric character.
+	The values returned are nonzero if the character c 
+	falls into the tested class, and zero if not.
+ */

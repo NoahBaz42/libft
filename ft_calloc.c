@@ -6,11 +6,11 @@
 /*   By: nbaz-sil <nbaz-sil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/13 11:27:11 by nbaz-sil          #+#    #+#             */
-/*   Updated: 2026/04/14 19:27:18 by nbaz-sil         ###   ########.fr       */
+/*   Updated: 2026/04/27 17:03:54 by nbaz-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void *ft_calloc(size_t nmemb, size_t size)
+void *ft_calloc(size_t memb, size_t size)
 {
 	
 }

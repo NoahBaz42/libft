@@ -1,22 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nbaz-sil <nbaz-sil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/13 11:27:54 by nbaz-sil          #+#    #+#             */
-/*   Updated: 2026/04/13 12:58:32 by nbaz-sil         ###   ########.fr       */
+/*   Created: 2026/04/13 11:27:51 by nbaz-sil          #+#    #+#             */
+/*   Updated: 2026/04/29 23:30:30 by nbaz-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void ft_putstr_fd(char *s, int fd)
+
+void ft_putnbr_fd(int n, int fd)
 {
-	
+	long int	nb;
+
+	nb = n;
+	if (n < 0)
+	{
+		ft_putchar_fd('-', fd);
+		n *= -1;
+	}
+	if (n >= 0 && n <= 9)
+		ft_putchar_fd(n + '0', fd);
+	if (n > 9)
+	{
+		ft_putnbr_fd(n / 10, fd);
+		ft_putnbr_fd(n % 10, fd);
+	}
 }
-/* Parameters s: The string to output.
+/* Parameters n: The integer to output.
 fd: The file descriptor on which to write.
 Return Value None
 External Function write
-Description Outputs the string ’s’ to the specified file
+Description Outputs the integer ’n’ to the specified file
 descriptor. */

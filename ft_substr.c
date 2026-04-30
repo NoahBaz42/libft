@@ -6,14 +6,33 @@
 /*   By: nbaz-sil <nbaz-sil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/13 11:28:30 by nbaz-sil          #+#    #+#             */
-/*   Updated: 2026/04/13 12:53:31 by nbaz-sil         ###   ########.fr       */
+/*   Updated: 2026/04/25 15:27:11 by nbaz-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <stdlib.h>
 
 char *ft_substr(char const *s, unsigned int start,
 size_t len)
 {
+	int i;
+	int k;
+	char* sub;
 	
+	i = 0;
+	k = 0;
+	*sub = malloc(sizeof len);
+	while(s[i] != start)
+	{
+		i++;
+	}
+	while(s[i] != '\0')
+	{
+		sub[k] = s[i];
+		i++;
+		k++;
+	}
+	return(sub);
 }
 /* Parameters s: The original string from which to create the
 substring.

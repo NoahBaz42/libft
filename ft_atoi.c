@@ -6,34 +6,39 @@
 /*   By: nbaz-sil <nbaz-sil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/13 11:25:31 by nbaz-sil          #+#    #+#             */
-/*   Updated: 2026/04/14 19:58:00 by nbaz-sil         ###   ########.fr       */
+/*   Updated: 2026/04/30 03:17:48 by nbaz-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_atoi(const char *nptr)
+int	ft_atoi(const char *ptr)
 {
-       int i;
+	int		i;
+	int		sign;
+	int		result;
 
-       i = 0;
-       while(&nptr)
-       {
-              if()
-       }
-
-	
-	
+	i = 0;
+	sign = 1;
+	result = 0;
+	while (ptr[i] == ' ' || (ptr[i] >= 9 && ptr[i] <= 13))
+		i++;
+	if (ptr[i] == '-' || ptr[i] == '+')
+	{
+		if (ptr[i] == '-')
+			sign *= -1;
+		i++;
+	}
+	while (ptr[i] >= '0' && ptr[i] <= '9')
+	{
+		result = (result * 10) + (ptr[i] - '0');
+		i++;
+	}
+	return (result * sign);
 }
-/* DESCRIPTION
-       The  atoi() function converts the initial portion of the string pointed
-       to by nptr to int.  The behavior is the same as
 
-           strtol(nptr, NULL, 10);
+/*
+ 	The  atoi() function converts the initial portion
+ 	of the string pointed to by ptr to int.
+	Atoi() does not detect errors.
 
-       except that atoi() does not detect errors.
-
-       The atol() and atoll() functions behave the same as atoi(), except that
-       they  convert the initial portion of the string to their return type of
-       long or long long.
-
-RETURN VALUE
-       The converted value or 0 on error. */
+	The return value is the converted value or 0 on error.
+*/

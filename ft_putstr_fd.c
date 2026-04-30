@@ -1,24 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
+/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nbaz-sil <nbaz-sil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/13 11:28:44 by nbaz-sil          #+#    #+#             */
-/*   Updated: 2026/04/27 17:10:02 by nbaz-sil         ###   ########.fr       */
+/*   Created: 2026/04/13 11:27:54 by nbaz-sil          #+#    #+#             */
+/*   Updated: 2026/04/30 05:46:18 by nbaz-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void ft_lstadd_front(t_list **lst, t_list *new)
+#include "libft.h"
+
+void ft_putstr_fd(char *s, int fd)
 {
-	
+	while(*s)
+	{
+		write (fd, s, 1);
+		s++;
+	}
 }
-/* Parameters
- lst: The address of a pointer to the first node of
-a list.
-new: The address of a pointer to the node to be
-added.
+/* Parameters s: The string to output.
+fd: The file descriptor on which to write.
 Return Value None
-External Function None
-Description Adds the node ’new’ at the beginning of the list. */
+External Function write
+Description Outputs the string ’s’ to the specified file
+descriptor. */

@@ -6,7 +6,7 @@
 /*   By: nbaz-sil <nbaz-sil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/13 11:28:19 by nbaz-sil          #+#    #+#             */
-/*   Updated: 2026/04/14 19:31:38 by nbaz-sil         ###   ########.fr       */
+/*   Updated: 2026/04/25 15:41:27 by nbaz-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,3 +36,18 @@ RETURN VALUE
        to, or greater than zero if s1 (or the first n bytes thereof) is found,
        respectively, to be less than, to match, or be greater than s2.
  */
+ int	ft_strncmp(char *s1, char *s2, unsigned int n)
+{
+	unsigned int	i;
+
+	i = 0;
+	if (n == 0)
+		return (0);
+	while (s1[i] && s2[i] && i < n && s1[i] == s2[i])
+	{
+		i++;
+	}
+	if (i == n)
+		return (0);
+	return (s1[i] - s2[i]);
+}
