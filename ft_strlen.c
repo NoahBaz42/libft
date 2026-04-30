@@ -6,12 +6,11 @@
 /*   By: nbaz-sil <nbaz-sil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/13 11:28:12 by nbaz-sil          #+#    #+#             */
-/*   Updated: 2026/04/30 03:54:32 by nbaz-sil         ###   ########.fr       */
+/*   Updated: 2026/04/30 06:33:49 by nbaz-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include <string.h>
+#include "libft.h"
 
 size_t	ft_strlen(const char *s)
 {
@@ -31,13 +30,13 @@ size_t	ft_strlen(const char *s)
 	It returns the number of bytes in the string pointed to by s.
 */
 
-/* 
+/*
 #include <stdio.h>
 
-int main(void)
+int	main(void)
 {
 	const char* str = NULL;
 	printf("%zu\n",ft_strlen(str));
 	return(0);
-}  
+}
 */

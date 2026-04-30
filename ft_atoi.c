@@ -3,19 +3,20 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nbaz-sil <nbaz-sil@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: nbaz-sil <nbaz-sil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/30 06:04:58 by nbaz-sil          #+#    #+#             */
-/*   Updated: 2026/04/30 06:05:00 by nbaz-sil         ###   ########.fr       */
+/*   Updated: 2026/04/30 06:30:44 by nbaz-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 
 int	ft_atoi(const char *ptr)
 {
-	int		i;
-	int		sign;
-	int		result;
+	int	i;
+	int	sign;
+	int	result;
 
 	i = 0;
 	sign = 1;
@@ -37,8 +38,8 @@ int	ft_atoi(const char *ptr)
 }
 
 /*
- 	The  atoi() function converts the initial portion
- 	of the string pointed to by ptr to int.
+	The  atoi() function converts the initial portion
+	of the string pointed to by ptr to int.
 	Atoi() does not detect errors.
 
 	The return value is the converted value or 0 on error.

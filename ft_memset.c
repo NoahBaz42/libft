@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nbaz-sil <nbaz-sil@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: nbaz-sil <nbaz-sil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/13 11:27:43 by nbaz-sil          #+#    #+#             */
-/*   Updated: 2026/04/30 06:05:26 by nbaz-sil         ###   ########.fr       */
+/*   Updated: 2026/04/30 06:32:38 by nbaz-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include <stdio.h>
+#include "libft.h"
 
 void	*ft_memset(void *s, int c, size_t n)
 {
@@ -33,12 +32,12 @@ void	*ft_memset(void *s, int c, size_t n)
 	area s.
 */
 
-/* 
+/*
 	int main(void)
 	{
 		char str[12];
 		ft_memset((void*)str, 56, 4);
 		printf("%s\n", str);
 		return(0);
-	} 
+	}
 */
