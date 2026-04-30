@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nbaz-sil <nbaz-sil@student.42.fr>          +#+  +:+       +#+        */
+/*   By: nbaz-sil <nbaz-sil@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/13 11:25:31 by nbaz-sil          #+#    #+#             */
-/*   Updated: 2026/04/30 03:17:48 by nbaz-sil         ###   ########.fr       */
+/*   Created: 2026/04/30 06:04:58 by nbaz-sil          #+#    #+#             */
+/*   Updated: 2026/04/30 06:05:00 by nbaz-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 
 int	ft_atoi(const char *ptr)
 {
