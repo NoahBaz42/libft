@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nbaz-sil <nbaz-sil@student.42.fr>          +#+  +:+       +#+        */
+/*   By: nbaz-sil <nbaz-sil@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/13 11:28:07 by nbaz-sil          #+#    #+#             */
-/*   Updated: 2026/04/30 06:51:56 by nbaz-sil         ###   ########.fr       */
+/*   Created: 2026/05/06 00:30:05 by nbaz-sil          #+#    #+#             */
+/*   Updated: 2026/05/06 12:09:13 by nbaz-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,10 @@
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
+
+
+
+
 }
 /*
 Parameters s1: The prefix string.

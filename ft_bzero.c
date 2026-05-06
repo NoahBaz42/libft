@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nbaz-sil <nbaz-sil@student.42.fr>          +#+  +:+       +#+        */
+/*   By: nbaz-sil <nbaz-sil@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/13 11:26:28 by nbaz-sil          #+#    #+#             */
-/*   Updated: 2026/04/30 06:40:19 by nbaz-sil         ###   ########.fr       */
+/*   Created: 2026/05/06 00:27:42 by nbaz-sil          #+#    #+#             */
+/*   Updated: 2026/05/06 00:27:43 by nbaz-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 
 #include "libft.h"
 
@@ -34,12 +35,67 @@ void	ft_bzero(void *s, size_t n)
 */
 
 // NOTA: Em vez de 21, usar ft_strlen();
+
 /* int	main(void)
 {
-	char	str[] = "ola isto e uma string";
+	char	str1[10] = "Hello";
+	char	str2[10] = "Hello";
 
-	// unsigned int a = 0;
-	ft_bzero(str, 21);
-	printf("%s\n", str);
+	char	str3[10] = "World";
+	char	str4[10] = "World";
+
+	printf("Before:\n");
+	printf("ft_str1: %s\n", str1);
+	printf("bzero str2: %s\n", str2);
+	printf("ft_str3: %s\n", str3);
+	printf("bzero str4: %s\n", str4);
+
+	// Apply your function
+	ft_bzero(str1, sizeof(str1));
+	ft_bzero(str3, 3);
+
+	// Apply real bzero
+	bzero(str2, sizeof(str2));
+	bzero(str4, 3);
+
+	printf("\nAfter:\n");
+	printf("ft_str1: %s\n", str1);
+	printf("bzero str2: %s\n", str2);
+
+	printf("ft_str3: %s\n", str3);
+	printf("bzero str4: %s\n", str4);
+
+	return (0);
+} */
+
+/* int	main(void)
+{
+	char	str1[10] = "Hello";
+	char	str2[10] = "Hello";
+
+	char	str3[10] = "World";
+	char	str4[10] = "World";
+
+	printf("Before:\n");
+	printf("ft_str1: %s\n", str1);
+	printf("bzero str2: %s\n", str2);
+	printf("ft_str3: %s\n", str3);
+	printf("bzero str4: %s\n", str4);
+
+	// Apply your function
+	ft_bzero(str1, sizeof(str1));
+	ft_bzero(str3, 3);
+
+	// Apply real bzero
+	bzero(str2, sizeof(str2));
+	bzero(str4, 3);
+
+	printf("\nAfter:\n");
+	printf("ft_str1: %s\n", str1);
+	printf("bzero str2: %s\n", str2);
+
+	printf("ft_str3: %s\n", str3);
+	printf("bzero str4: %s\n", str4);
+
 	return (0);
 } */

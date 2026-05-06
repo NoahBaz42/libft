@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nbaz-sil <nbaz-sil@student.42.fr>          +#+  +:+       +#+        */
+/*   By: nbaz-sil <nbaz-sil@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/13 11:27:40 by nbaz-sil          #+#    #+#             */
-/*   Updated: 2026/04/30 06:50:46 by nbaz-sil         ###   ########.fr       */
+/*   Created: 2026/05/06 00:29:18 by nbaz-sil          #+#    #+#             */
+/*   Updated: 2026/05/06 15:11:46 by nbaz-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,12 +16,12 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	unsigned char	*ndest;
 	unsigned char	*nsrc;
-	int				i;
+	size_t			i;
 
 	i = 0;
-	ndest = dest;
-	nsrc = src;
-	while (ndest[i] < n)
+	ndest = (unsigned char *)dest;
+	nsrc = (unsigned char *)src;
+	while (i < n)
 	{
 		ndest[i] = nsrc[i];
 		i++;
@@ -38,3 +38,14 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	RETURN VALUE
 	The memmove() function returns a pointer to dest.
 */
+/* 
+int	main(void)
+{
+	const void	*src = "vem de ca";
+	void		*dest[10];
+
+	printf("%s\n", (char *)ft_memmove(dest, src, 7));
+	printf("%s\n", (char *)memmove(dest, src, 7));
+
+	return (0);
+}  */

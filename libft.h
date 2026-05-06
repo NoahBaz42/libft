@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nbaz-sil <nbaz-sil@student.42.fr>          +#+  +:+       +#+        */
+/*   By: nbaz-sil <nbaz-sil@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/13 11:09:49 by nbaz-sil          #+#    #+#             */
-/*   Updated: 2026/04/30 06:29:40 by nbaz-sil         ###   ########.fr       */
+/*   Created: 2026/05/06 00:26:44 by nbaz-sil          #+#    #+#             */
+/*   Updated: 2026/05/06 00:26:45 by nbaz-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 
 #ifndef LIBFT_H
 # define LIBFT_H
@@ -16,6 +17,7 @@
 # include <unistd.h>
 # include <stdlib.h>
 # include <stdio.h>
+# include <string.h>
 # include <stddef.h>
 
 typedef struct s_list

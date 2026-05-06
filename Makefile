@@ -6,7 +6,7 @@
 #    By: nbaz-sil <nbaz-sil@student.42lisboa.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/04/25 11:52:18 by nbaz-sil          #+#    #+#              #
-#    Updated: 2026/04/30 06:07:34 by nbaz-sil         ###   ########.fr        #
+#    Updated: 2026/05/06 06:37:04 by nbaz-sil         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,8 +16,8 @@ NAME = libft.a
 
 CC = cc -Wall -Wextra -Werror 
 
-SRC = ft_atoi.c ft_bzero.c ft_calloc.c ft_isalnum.c \
-		ft_isalpha.c ft_isascii.c ft_isdigit.c ft_isprint.c \
+SRC = ft_isalpha.c ft_bzero.c  ft_isalnum.c ft_isdigit.c\
+		ft_isascii.c ft_calloc.c	ft_atoi.c   ft_isprint.c \
 		ft_itoa.c ft_memchr.c ft_memcmp.c ft_memcpy.c \
 		ft_memmove.c ft_memset.c ft_putchar_fd.c ft_putendl_fd.c \
 		ft_putnbr_fd.c ft_split.c ft_strchr.c ft_strdup.c \
@@ -34,16 +34,16 @@ OBJ = $(SRC:.c=.o)
 all: $(NAME)
 
 $(NAME): $(OBJ)
-#	how to create libft.a (NAME)
+	ar rcs ${NAME} ${OBJ} 
 
 %.o: %.c
-#   how to create each .o file
+	${CC} -c $< -o $@
 
 clean:
-	rm $(OBJ)
+	rm -rf $(OBJ)
 
 fclean: clean
-	rm $(NAME)
+	rm -rf $(NAME)
 
 re: fclean all
 

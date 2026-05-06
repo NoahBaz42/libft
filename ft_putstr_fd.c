@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nbaz-sil <nbaz-sil@student.42.fr>          +#+  +:+       +#+        */
+/*   By: nbaz-sil <nbaz-sil@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/13 11:27:54 by nbaz-sil          #+#    #+#             */
-/*   Updated: 2026/04/30 06:51:12 by nbaz-sil         ###   ########.fr       */
+/*   Created: 2026/05/06 00:29:40 by nbaz-sil          #+#    #+#             */
+/*   Updated: 2026/05/06 01:19:33 by nbaz-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	ft_putstr_fd(char *s, int fd)
 {
 	while (*s)
 	{
-		write(fd, s, 1);
+		write (fd, s, 1);
 		s++;
 	}
 }

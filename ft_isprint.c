@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nbaz-sil <nbaz-sil@student.42.fr>          +#+  +:+       +#+        */
+/*   By: nbaz-sil <nbaz-sil@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/13 11:27:27 by nbaz-sil          #+#    #+#             */
-/*   Updated: 2026/04/30 06:23:45 by nbaz-sil         ###   ########.fr       */
+/*   Created: 2026/05/06 00:28:17 by nbaz-sil          #+#    #+#             */
+/*   Updated: 2026/05/06 00:32:08 by nbaz-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_isprint(int c)
 {
-	if (c >= ' ' && c <= '~')
+	if (c >= 32 && c <= 126)
 		return (1);
 	else
 		return (0);
@@ -26,3 +26,13 @@ int	ft_isprint(int c)
 	The values returned are nonzero if the character
 	c falls into the tested class, and zero if not.
  */
+/* int	main(void)
+{
+	int	c = '?';
+	int	d = 127;
+
+	printf("%d\n",ft_isprint(c));
+	printf("%d\n",ft_isprint(d));
+
+	return (0);
+} */

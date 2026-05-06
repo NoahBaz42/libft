@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nbaz-sil <nbaz-sil@student.42.fr>          +#+  +:+       +#+        */
+/*   By: nbaz-sil <nbaz-sil@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/13 11:27:56 by nbaz-sil          #+#    #+#             */
-/*   Updated: 2026/04/30 06:51:16 by nbaz-sil         ###   ########.fr       */
+/*   Created: 2026/05/06 00:29:45 by nbaz-sil          #+#    #+#             */
+/*   Updated: 2026/05/06 11:38:53 by nbaz-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,14 @@
 
 char	**ft_split(char const *s, char c)
 {
+	
+
+
+
+
+
+
+	free()
 }
 /*
 Parameters s: The string to be split.

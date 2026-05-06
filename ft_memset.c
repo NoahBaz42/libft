@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nbaz-sil <nbaz-sil@student.42.fr>          +#+  +:+       +#+        */
+/*   By: nbaz-sil <nbaz-sil@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/13 11:27:43 by nbaz-sil          #+#    #+#             */
-/*   Updated: 2026/04/30 06:32:38 by nbaz-sil         ###   ########.fr       */
+/*   Created: 2026/05/06 00:29:24 by nbaz-sil          #+#    #+#             */
+/*   Updated: 2026/05/06 00:31:43 by nbaz-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,12 +15,14 @@
 void	*ft_memset(void *s, int c, size_t n)
 {
 	unsigned char	*p;
+	size_t			i;
 
 	p = s;
-	while (n > 0)
+	i = 0;
+	while (i < n)
 	{
-		*p++ = c;
-		n--;
+		p[i] = (unsigned char)c;
+		i++;
 	}
 	return (s);
 }
@@ -31,13 +33,15 @@ void	*ft_memset(void *s, int c, size_t n)
 	The memset() function returns a pointer to the memory
 	area s.
 */
+/* int main(void)
+{
+	char str[6];
+	char ptr[6];
+	ft_memset((void*)str, 56, 5);
+	printf("%s\n", str);
+	memset((void*)ptr, 56, 5);
+	printf("%s\n", ptr);
 
-/*
-	int main(void)
-	{
-		char str[12];
-		ft_memset((void*)str, 56, 4);
-		printf("%s\n", str);
-		return(0);
-	}
-*/
+	return(0);
+}
+ */

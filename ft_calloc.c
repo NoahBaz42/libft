@@ -3,17 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nbaz-sil <nbaz-sil@student.42.fr>          +#+  +:+       +#+        */
+/*   By: nbaz-sil <nbaz-sil@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/13 11:27:11 by nbaz-sil          #+#    #+#             */
-/*   Updated: 2026/04/30 06:47:52 by nbaz-sil         ###   ########.fr       */
+/*   Created: 2026/05/06 00:27:48 by nbaz-sil          #+#    #+#             */
+/*   Updated: 2026/05/06 14:55:51 by nbaz-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 
 #include "libft.h"
 
 void	*ft_calloc(size_t memb, size_t size)
 {
+	
 }
 /* 
 	The malloc() function allocates size bytes 
@@ -49,3 +51,6 @@ void	*ft_calloc(size_t memb, size_t size)
 	this rule: If nmemb or size is 0, then calloc() returns a unique
 	pointer value that can be successfully passed to free(void).
 */
+
+
+free()

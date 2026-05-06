@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nbaz-sil <nbaz-sil@student.42.fr>          +#+  +:+       +#+        */
+/*   By: nbaz-sil <nbaz-sil@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/13 11:27:59 by nbaz-sil          #+#    #+#             */
-/*   Updated: 2026/04/30 06:51:27 by nbaz-sil         ###   ########.fr       */
+/*   Created: 2026/05/06 00:29:49 by nbaz-sil          #+#    #+#             */
+/*   Updated: 2026/05/06 15:32:19 by nbaz-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,11 @@ char	*ft_strchr(const char *s, int c)
 {
 	while (*s)
 	{
-		if (s == c)
-			return ((s)s++);
+		if (*s == (char) c)
+			return ((char *)s);
+		s++;
 	}
-	return (s);
+	return (NULL);
 }
 /* 
 	The  strchr() function returns a pointer to the first occurrence of the
@@ -29,3 +30,13 @@ char	*ft_strchr(const char *s, int c)
 	byte is considered part of the string, so that if  c  is  specified  as
 	'\0', these functions return a pointer to the terminator.
  */
+
+/*  int main(void)
+ {
+	const char str[panadana];
+	int c = 'd';
+	printf("%s\n", ft_strchr(str, c));
+	printf("%s\n", strchr(str, c));
+
+	return (0);
+ } */

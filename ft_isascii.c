@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: nbaz-sil <nbaz-sil@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/13 11:27:22 by nbaz-sil          #+#    #+#             */
-/*   Updated: 2026/04/30 06:16:05 by nbaz-sil         ###   ########.fr       */
+/*   Created: 2026/05/06 00:28:11 by nbaz-sil          #+#    #+#             */
+/*   Updated: 2026/05/06 00:32:12 by nbaz-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_isascii(int c)
 {
-	if (c >= '\0' && c <= '~')
+	if (c >= 0 && c <= 127)
 		return (1);
 	else
 		return (0);
@@ -26,3 +26,13 @@ int	ft_isascii(int c)
 	The values returned are nonzero if the character c
 	falls into the tested class, and zero if not.
  */
+/* int main(void)
+{
+    int a = 'a'; 
+    int b = 200;
+
+    printf("%d\n", ft_isascii(a));
+    printf("%d\n", ft_isascii(b));
+
+    return 0;
+} */

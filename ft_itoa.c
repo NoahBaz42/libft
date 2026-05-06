@@ -3,18 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nbaz-sil <nbaz-sil@student.42.fr>          +#+  +:+       +#+        */
+/*   By: nbaz-sil <nbaz-sil@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/13 11:27:30 by nbaz-sil          #+#    #+#             */
-/*   Updated: 2026/04/30 06:48:30 by nbaz-sil         ###   ########.fr       */
+/*   Created: 2026/05/06 00:28:20 by nbaz-sil          #+#    #+#             */
+/*   Updated: 2026/05/06 00:32:05 by nbaz-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_itoa(int n)
+/* char	*ft_itoa(int n)
 {
-}
+} */
 
 /* 
 Parameters n: The integer to convert.

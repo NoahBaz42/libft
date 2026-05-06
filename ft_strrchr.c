@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nbaz-sil <nbaz-sil@student.42.fr>          +#+  +:+       +#+        */
+/*   By: nbaz-sil <nbaz-sil@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/13 11:28:25 by nbaz-sil          #+#    #+#             */
-/*   Updated: 2026/04/30 06:59:02 by nbaz-sil         ###   ########.fr       */
+/*   Created: 2026/05/06 00:30:37 by nbaz-sil          #+#    #+#             */
+/*   Updated: 2026/05/06 15:44:04 by nbaz-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,12 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	while (s)
+	char	*str;
+	while (*s)
 	{
-		if (s == c)
-			return ((s)s++);
+		if (*s == c)
+			str = (char *)s);
+		*s--;
 	}
 	return (s);
 }

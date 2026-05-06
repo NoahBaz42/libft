@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nbaz-sil <nbaz-sil@student.42.fr>          +#+  +:+       +#+        */
+/*   By: nbaz-sil <nbaz-sil@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/13 11:28:12 by nbaz-sil          #+#    #+#             */
-/*   Updated: 2026/04/30 06:33:49 by nbaz-sil         ###   ########.fr       */
+/*   Created: 2026/05/06 00:30:19 by nbaz-sil          #+#    #+#             */
+/*   Updated: 2026/05/06 00:31:25 by nbaz-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,14 +29,18 @@ size_t	ft_strlen(const char *s)
 	by s, excluding the terminating null byte ('\0').
 	It returns the number of bytes in the string pointed to by s.
 */
-
-/*
-#include <stdio.h>
+/* #include <stdio.h>
 
 int	main(void)
 {
 	const char* str = NULL;
+	const char* ptr = "sup";
+	
+	printf("%zu\n",strlen(ptr));
+	printf("%zu\n",ft_strlen(ptr));
+
+	printf("%zu\n",strlen(str));
 	printf("%zu\n",ft_strlen(str));
 	return(0);
 }
-*/
+ */

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nbaz-sil <nbaz-sil@student.42.fr>          +#+  +:+       +#+        */
+/*   By: nbaz-sil <nbaz-sil@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/13 11:28:10 by nbaz-sil          #+#    #+#             */
-/*   Updated: 2026/04/30 06:54:05 by nbaz-sil         ###   ########.fr       */
+/*   Created: 2026/05/06 00:30:09 by nbaz-sil          #+#    #+#             */
+/*   Updated: 2026/05/06 01:12:25 by nbaz-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
+	int i
 }
 
 /*
