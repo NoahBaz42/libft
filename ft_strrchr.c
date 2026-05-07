@@ -6,7 +6,7 @@
 /*   By: nbaz-sil <nbaz-sil@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/06 00:30:37 by nbaz-sil          #+#    #+#             */
-/*   Updated: 2026/05/06 15:44:04 by nbaz-sil         ###   ########.fr       */
+/*   Updated: 2026/05/07 15:46:28 by nbaz-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,17 @@
 char	*ft_strrchr(const char *s, int c)
 {
 	char	*str;
-	while (*s)
+	int		i;
+
+	str = NULL;
+	i = 0;
+	while (s[i])
 	{
-		if (*s == c)
-			str = (char *)s);
-		*s--;
+		if (s[i] == (char) c)
+			str = ((char *)&s[i]);
+		i++;
 	}
-	return (s);
+	return (str);
 }
 /*
 	The strrchr() function returns a pointer to the last occurrence of  the
@@ -32,3 +36,12 @@ char	*ft_strrchr(const char *s, int c)
 	byte is considered part of the string, so that if  c  is  specified  as
 	'\0', these functions return a pointer to the terminator.
  */
+/*  int main(void)
+ {
+	const char str[] = "panadanada";
+	int c = 'd';
+	printf("%s\n", ft_strrchr(str, c));
+	printf("%s\n", strrchr(str, c));
+
+	return (0);
+ } */

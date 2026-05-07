@@ -6,7 +6,7 @@
 /*   By: nbaz-sil <nbaz-sil@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/06 00:29:49 by nbaz-sil          #+#    #+#             */
-/*   Updated: 2026/05/06 15:32:19 by nbaz-sil         ###   ########.fr       */
+/*   Updated: 2026/05/07 15:45:53 by nbaz-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ char	*ft_strchr(const char *s, int c)
 
 /*  int main(void)
  {
-	const char str[panadana];
+	const char str[panadanada];
 	int c = 'd';
 	printf("%s\n", ft_strchr(str, c));
 	printf("%s\n", strchr(str, c));
