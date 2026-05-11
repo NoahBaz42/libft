@@ -6,7 +6,7 @@
 /*   By: nbaz-sil <nbaz-sil@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/06 00:29:28 by nbaz-sil          #+#    #+#             */
-/*   Updated: 2026/05/06 00:31:41 by nbaz-sil         ###   ########.fr       */
+/*   Updated: 2026/05/11 16:41:09 by nbaz-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,7 @@ void	ft_putchar_fd(char c, int fd)
 }
 
 /*
-Parameters c: The character to output.
-fd: The file descriptor on which to write.
-Return Value None
-External Function write
-Description Outputs the character ’c’ to the specified file
-descriptor
+	Outputs the character ’c’ to the specified file descriptor
+	Return Value: None
+	External Function: write
 */

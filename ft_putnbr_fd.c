@@ -6,7 +6,7 @@
 /*   By: nbaz-sil <nbaz-sil@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/06 00:29:37 by nbaz-sil          #+#    #+#             */
-/*   Updated: 2026/05/06 01:04:47 by nbaz-sil         ###   ########.fr       */
+/*   Updated: 2026/05/11 16:51:19 by nbaz-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,15 +31,13 @@ void	ft_putnbr_fd(int n, int fd)
 	}
 }
 /*
-Parameters n: The integer to output.
-fd: The file descriptor on which to write.
-Return Value None
-External Function write
-Description Outputs the integer ’n’ to the specified file
-descriptor.
+	Outputs the integer ’n’ to the specified file descriptor.
+	Return Value: None
+	External Function: write 
 */
-int	main(void)
+
+/* int main(void)
 {
-	ft_putnbr_fd(2147483647, 1);
+	ft_putnbr_fd(-2147483648, 1);
 	printf("\n");
-} 
+} */

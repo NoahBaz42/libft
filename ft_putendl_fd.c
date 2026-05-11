@@ -6,7 +6,7 @@
 /*   By: nbaz-sil <nbaz-sil@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/06 00:29:32 by nbaz-sil          #+#    #+#             */
-/*   Updated: 2026/05/06 01:28:37 by nbaz-sil         ###   ########.fr       */
+/*   Updated: 2026/05/11 16:50:06 by nbaz-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,10 @@ void	ft_putendl_fd(char *s, int fd)
 	write(fd, "\n", 1);
 }
 /*
-Outputs the string ’s’ to the specified file
-descriptor followed by a newline.
+	Outputs the string ’s’ to the specified file
+	descriptor followed by a newline.
+	Return Value: None
+	External Function: write 
 */
 /* int	main ()
 {

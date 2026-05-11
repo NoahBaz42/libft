@@ -6,7 +6,7 @@
 /*   By: nbaz-sil <nbaz-sil@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/06 00:29:52 by nbaz-sil          #+#    #+#             */
-/*   Updated: 2026/05/06 13:55:05 by nbaz-sil         ###   ########.fr       */
+/*   Updated: 2026/05/11 17:22:59 by nbaz-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,9 @@ char	*ft_strdup(const char *s)
 {
 	size_t	i;
 	char	*str;
-
+	
 	i = 0;
-	str = (char *) malloc(ft_strlen(s) + 1);
+	str = malloc(ft_strlen(s) + 1);
 	if (!str)
 		return (NULL);
 	while (s[i])
@@ -31,26 +31,24 @@ char	*ft_strdup(const char *s)
 }
 
 /*  
-	The  strdup() function returns a pointer to a new string which is a du‐
-	plicate of the string s.  Memory for the new string  is  obtained  with
-	malloc(3), and can be freed with free(3).
+	The  strdup() function returns a pointer to a new string which
+	is a duplicate of the string s.  Memory for the new string
+	is obtained with malloc(3), and can be freed with free(3).
 
-
-	RETURN VALUE
-	On  success,  the strdup() function returns a pointer to the duplicated
-	string.  It returns NULL if insufficient memory was available,
-	with er‐rno set to indicate the cause of the error.
+	strdup() returns a pointer to the duplicated string.
+	It returns NULL if insufficient memory was available,
+	with errno set to indicate the cause of the error.
 */
 
 /* int	main(void)
 {
-	const char	*str = "okay lets see how this goes";
+	const char	*str = "WHAT IF...123456789'/0'/0'/0'/0'!@#$%^&*()MUAHAaHAh";
 	char * str1;
 	char * str2;
 	str1 = ft_strdup(str);
 	str2 = strdup(str);
-	printf("%s\n", str1);
-	printf("%s\n", str2);
+	printf("\nft_strdup:\nSource string:%s\nNew    string:%s\n", str, str1);
+	printf("\nstrdup:\nSource string:%s\nNew    string:%s\n", str, str2);
 
 	free(str1);
 	free(str2);

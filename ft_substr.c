@@ -6,7 +6,7 @@
 /*   By: nbaz-sil <nbaz-sil@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/06 00:30:44 by nbaz-sil          #+#    #+#             */
-/*   Updated: 2026/05/06 00:31:03 by nbaz-sil         ###   ########.fr       */
+/*   Updated: 2026/05/11 19:16:03 by nbaz-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,36 +14,33 @@
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	int		i;
-	int		k;
 	char	*sub;
+	size_t	s_len;
 
-	i = 0;
-	k = 0;
+	s_len = ft_strlen(s);
+	if (start > s_len || len == 0)
+		return (ft_strdup(""));
+	if (len > s_len - start)
+		len = s_len - start;
 	sub = malloc(len + 1);
-	while (i < start)
-	{
-		i++;
-	}
-	while (s[i] != '\0')
-	{
-		sub[k] = s[i];
-		i++;
-		k++;
-	}
+	if (!sub)
+		return (NULL);
+	ft_strlcpy(sub, s + start, len);
 	return (sub);
 }
 /*
-Parameters s: The original string from which to create the
-substring.
-start: The starting index of the substring within
-’s’.
-len: The maximum length of the substring.
-Return Value The substring.
-NULL if the allocation fails.
-External Function malloc
-Description Allocates memory (using malloc(3)) and returns a
-substring from the string ’s’.
-The substring starts at index ’start’ and has a
-maximum length of ’len
+	Allocates memory (using malloc(3)) and returns a
+	substring from the string ’s’.
+	The substring starts at index ’start’ and has a
+	maximum length of ’len
+	Return Value: The substring.
+	NULL if the allocation fails.
+	External Function: malloc 
 */
+
+/* int main(void)
+{
+	char dst[6] = "uupsi";
+	printf("\nft_substr's substring: %s\n\n", ft_substr(dst, 2, 3));
+	return (0);
+}  */

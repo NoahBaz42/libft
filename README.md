@@ -1,5 +1,5 @@
-his project has been created as part
-of the 42 curriculum by nbaz-sil.
+*his project has been created as part
+of the 42 curriculum by nbaz-sil
 
 Readme Requirements
 A README.md file must be provided at the root of your Git repository. Its purpose is

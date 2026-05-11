@@ -6,7 +6,7 @@
 /*   By: nbaz-sil <nbaz-sil@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/06 00:26:44 by nbaz-sil          #+#    #+#             */
-/*   Updated: 2026/05/06 00:26:45 by nbaz-sil         ###   ########.fr       */
+/*   Updated: 2026/05/11 16:33:46 by nbaz-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@
 # include <stdio.h>
 # include <string.h>
 # include <stddef.h>
+# include <stdint.h>
 
 typedef struct s_list
 {

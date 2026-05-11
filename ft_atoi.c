@@ -6,10 +6,9 @@
 /*   By: nbaz-sil <nbaz-sil@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/06 00:27:24 by nbaz-sil          #+#    #+#             */
-/*   Updated: 2026/05/06 00:27:25 by nbaz-sil         ###   ########.fr       */
+/*   Updated: 2026/05/10 14:35:37 by nbaz-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 #include "libft.h"
 
@@ -45,3 +44,13 @@ int	ft_atoi(const char *ptr)
 
 	The return value is the converted value or 0 on error.
 */
+
+/* int main(void)
+{
+	const char *ptr = "    -420aahh0";
+	const char *str = "    -420aahh0";
+
+	printf("%d\n", ft_atoi(ptr));
+	printf("%d\n", atoi(str));
+	return (0);
+} */

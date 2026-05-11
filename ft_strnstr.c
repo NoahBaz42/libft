@@ -6,7 +6,7 @@
 /*   By: nbaz-sil <nbaz-sil@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/06 00:30:33 by nbaz-sil          #+#    #+#             */
-/*   Updated: 2026/05/07 15:50:49 by nbaz-sil         ###   ########.fr       */
+/*   Updated: 2026/05/09 14:32:15 by nbaz-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,15 +56,12 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 
 	ptr = strnstr(largestring, smallstring, 4);
 */
-//to be tested
-#include <string.h>
 
-int main(void)
+/* int main(void)
 {
 	const char *heystack = "Foo Bar Baz";
 	const char *needle = "Bar";
 
 	printf("%s\n", ft_strnstr(heystack, needle, 4));
-	printf("%s\n", strnstr(heystack, needle, 4));
 	return (0);
-}
+} */

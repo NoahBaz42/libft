@@ -6,17 +6,29 @@
 /*   By: nbaz-sil <nbaz-sil@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/06 00:27:48 by nbaz-sil          #+#    #+#             */
-/*   Updated: 2026/05/06 14:55:51 by nbaz-sil         ###   ########.fr       */
+/*   Updated: 2026/05/11 18:28:05 by nbaz-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 #include "libft.h"
 
 void	*ft_calloc(size_t memb, size_t size)
 {
-	
+	void	*ptr;
+	size_t	ms;
+
+	if (size && memb > SIZE_MAX / size)
+		return (NULL);
+	if(memb == 0 || size == 0)
+		return(malloc(0));
+	ms = memb * size;
+	ptr = malloc(ms);
+	if (!ptr)
+		return (NULL);
+	ft_bzero(ptr, ms);
+	return (ptr);
 }
+
 /* 
 	The malloc() function allocates size bytes 
 	and returns a pointer to the allocated  memory.
@@ -31,6 +43,7 @@ void	*ft_calloc(size_t memb, size_t size)
 	The memory is set to zero. If nmemb or size is 0,
 	then  calloc()  returns either  NULL, or a unique
 	pointer value that can later be successfully passed to free().
+	
 	If the multiplication of nmemb and size would result
 	in integer overflow, then calloc() returns an error.
 	By contrast, an integer overflow would not be detected
@@ -39,18 +52,22 @@ void	*ft_calloc(size_t memb, size_t size)
 	malloc(nmemb * size);
 
 	RETURN VALUE
-	calloc() returns a pointer to the allocated
-	memory,  which  is  suitably  aligned for any built-in type.  On error,
-	it returns NULL. NULL may also be returned by a successful
-	call  to  calloc() with nmemb or size equal to zero.
-
-	The free() function returns no value.
-
- 	Depending on your current operating system, the ’calloc’ function’s
-	behavior may differ from its man page description. You must follow
-	this rule: If nmemb or size is 0, then calloc() returns a unique
-	pointer value that can be successfully passed to free(void).
+	calloc() returns a pointer to the allocated memory, which is
+	suitably aligned for any built-in type.
+	On error, it returns NULL.
+	NULL may also be returned by a successful call to calloc()
+	with nmemb or size equal to zero.
 */
-
-
-free()
+/* int main()
+{
+	int n = 10;
+	int i = 0;
+	int *ptr = (int*)calloc(n, sizeof(int));
+	while (i < n)
+	{
+    	printf("%d ", ptr[i]);
+		i++;
+	} 
+	printf("\n");
+	free(ptr);
+} */
