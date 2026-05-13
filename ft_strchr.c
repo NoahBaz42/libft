@@ -6,7 +6,7 @@
 /*   By: nbaz-sil <nbaz-sil@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/06 00:29:49 by nbaz-sil          #+#    #+#             */
-/*   Updated: 2026/05/07 15:45:53 by nbaz-sil         ###   ########.fr       */
+/*   Updated: 2026/05/12 12:09:33 by nbaz-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,22 +20,25 @@ char	*ft_strchr(const char *s, int c)
 			return ((char *)s);
 		s++;
 	}
+	if (c == '\0')
+		return ((char *)s);
 	return (NULL);
 }
 /* 
-	The  strchr() function returns a pointer to the first occurrence of the
-	character c in the string s.
-   The strchr() and strrchr() functions return a pointer  to  the  matched
-	character  or NULL if the character is not found.  The terminating null
-	byte is considered part of the string, so that if  c  is  specified  as
-	'\0', these functions return a pointer to the terminator.
+	The strchr() function returns a pointer to the **first**
+	occurrence of the character c in the string s.
+   	The strchr() returns a pointer to the matched character
+	or NULL if the character is not found.
+	The terminating null byte is considered part of the string,
+	so that if c is specified as '\0', these functions
+	return a pointer to the terminator.
  */
 
 /*  int main(void)
  {
-	const char str[panadanada];
-	int c = 'd';
-	printf("%s\n", ft_strchr(str, c));
+	const char *str = "panadanada";
+	int c = '\0';
+	printf("\n%s\n", ft_strchr(str, c));
 	printf("%s\n", strchr(str, c));
 
 	return (0);

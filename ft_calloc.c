@@ -6,7 +6,7 @@
 /*   By: nbaz-sil <nbaz-sil@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/06 00:27:48 by nbaz-sil          #+#    #+#             */
-/*   Updated: 2026/05/11 18:28:05 by nbaz-sil         ###   ########.fr       */
+/*   Updated: 2026/05/12 12:23:58 by nbaz-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,13 +19,13 @@ void	*ft_calloc(size_t memb, size_t size)
 
 	if (size && memb > SIZE_MAX / size)
 		return (NULL);
-	if(memb == 0 || size == 0)
-		return(malloc(0));
+	if (memb == 0 || size == 0)
+		return (malloc(0));
 	ms = memb * size;
 	ptr = malloc(ms);
 	if (!ptr)
 		return (NULL);
-	ft_bzero(ptr, ms);
+	ft_bzero (ptr, ms);
 	return (ptr);
 }
 

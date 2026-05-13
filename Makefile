@@ -6,7 +6,7 @@
 #    By: nbaz-sil <nbaz-sil@student.42lisboa.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/04/25 11:52:18 by nbaz-sil          #+#    #+#              #
-#    Updated: 2026/05/10 20:04:22 by nbaz-sil         ###   ########.fr        #
+#    Updated: 2026/05/12 16:40:53 by nbaz-sil         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,8 +14,7 @@
 
 NAME = libft.a
 
-CC = cc -Wall -Wextra -Werror 
-CFLAGS_BDS = -lbsd
+CC = cc -Wall -Wextra -Werror -g
 
 SRC = 	ft_isalpha.c		\
 		ft_bzero.c			\
