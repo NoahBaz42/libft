@@ -6,7 +6,7 @@
 #    By: nbaz-sil <nbaz-sil@student.42lisboa.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/04/25 11:52:18 by nbaz-sil          #+#    #+#              #
-#    Updated: 2026/05/12 16:40:53 by nbaz-sil         ###   ########.fr        #
+#    Updated: 2026/05/13 22:22:10 by nbaz-sil         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,6 +33,7 @@ SRC = 	ft_isalpha.c		\
 		ft_putchar_fd.c		\
 		ft_putendl_fd.c		\
 		ft_putnbr_fd.c		\
+		ft_putstr_fd.c		\
 		ft_split.c			\
 		ft_strchr.c			\
 		ft_strdup.c			\
@@ -61,15 +62,15 @@ SRC = 	ft_isalpha.c		\
 
 OBJ = $(SRC:.c=.o)
 
-# Rules
+# Rules  
 
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	ar rcs ${NAME} ${OBJ} 
+	ar rcs $(NAME) $(OBJ) 
 
 %.o: %.c
-	${CC} -c $< -o $@
+	$(CC) -c $< -o $@
 
 clean:
 	rm -rf $(OBJ)

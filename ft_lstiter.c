@@ -6,7 +6,7 @@
 /*   By: nbaz-sil <nbaz-sil@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/06 00:28:44 by nbaz-sil          #+#    #+#             */
-/*   Updated: 2026/05/12 20:19:14 by nbaz-sil         ###   ########.fr       */
+/*   Updated: 2026/05/13 19:28:10 by nbaz-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
 	t_list	*tp;
+
 	tp = lst;
 	while (tp)
 	{

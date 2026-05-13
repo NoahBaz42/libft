@@ -6,7 +6,7 @@
 /*   By: nbaz-sil <nbaz-sil@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/06 00:29:00 by nbaz-sil          #+#    #+#             */
-/*   Updated: 2026/05/12 19:50:26 by nbaz-sil         ###   ########.fr       */
+/*   Updated: 2026/05/13 19:29:04 by nbaz-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,8 @@ int	ft_lstsize(t_list *lst)
 	int	len;
 
 	len = 0;
-	//if(!lst)
-	//	return (1);
+	if (!lst)
+		return (1);
 	while (lst)
 	{
 		lst = lst->next;
@@ -38,7 +38,7 @@ int	ft_lstsize(t_list *lst)
 	External Function: None
 */
 
-int main(void)
+/* int main(void)
 {
 	t_list	*node;
 
@@ -54,4 +54,4 @@ int main(void)
     free(node);
     
     return (0);
-}
+} */

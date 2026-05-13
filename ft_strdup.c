@@ -6,7 +6,7 @@
 /*   By: nbaz-sil <nbaz-sil@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/06 00:29:52 by nbaz-sil          #+#    #+#             */
-/*   Updated: 2026/05/11 17:22:59 by nbaz-sil         ###   ########.fr       */
+/*   Updated: 2026/05/13 19:33:50 by nbaz-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ char	*ft_strdup(const char *s)
 {
 	size_t	i;
 	char	*str;
-	
+
 	i = 0;
 	str = malloc(ft_strlen(s) + 1);
 	if (!str)

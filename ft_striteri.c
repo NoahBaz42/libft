@@ -6,7 +6,7 @@
 /*   By: nbaz-sil <nbaz-sil@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/06 00:29:56 by nbaz-sil          #+#    #+#             */
-/*   Updated: 2026/05/12 20:38:32 by nbaz-sil         ###   ########.fr       */
+/*   Updated: 2026/05/13 19:34:04 by nbaz-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 	External Function: None 
 */
 
-void	just_the_fkin_tolower(unsigned int i, char *c)
+/* void	just_the_fkin_tolower(unsigned int i, char *c)
 {
 	(void)i;
 	 *c = ft_tolower(*c);
@@ -47,4 +47,4 @@ int main()
 	ft_striteri(str, just_the_fkin_tolower);
 	printf("after  function: %s\n\n", str);
 	return(0);
-}
+} */

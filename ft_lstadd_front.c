@@ -6,7 +6,7 @@
 /*   By: nbaz-sil <nbaz-sil@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/06 00:28:29 by nbaz-sil          #+#    #+#             */
-/*   Updated: 2026/05/12 19:21:42 by nbaz-sil         ###   ########.fr       */
+/*   Updated: 2026/05/13 19:27:01 by nbaz-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ void	ft_lstadd_front(t_list **lst, t_list *new)
 	added.
 */
 // line 45: if(lst...blabla..next) -?- do this, else -:- , do that
-int	main(void)
+/* int	main(void)
 {
     t_list *lst = NULL;
     
@@ -45,4 +45,4 @@ int	main(void)
     printf("\nNext of last node: %s\n\n", lst->next->next ? "NOT NULL" : "NULL");
     
     return (0);
-}
+} */

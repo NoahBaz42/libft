@@ -6,7 +6,7 @@
 /*   By: nbaz-sil <nbaz-sil@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/06 00:28:32 by nbaz-sil          #+#    #+#             */
-/*   Updated: 2026/05/12 20:19:45 by nbaz-sil         ###   ########.fr       */
+/*   Updated: 2026/05/13 19:27:32 by nbaz-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,9 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
 	t_list	*tp;
 
-	while(lst)
+	while (lst)
 	{
-		tp =(*lst)->next;
+		tp = (*lst)->next;
 		ft_lstdelone(*lst, del);
 		*lst = tp;
 	}

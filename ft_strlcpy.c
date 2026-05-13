@@ -6,7 +6,7 @@
 /*   By: nbaz-sil <nbaz-sil@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/06 00:30:13 by nbaz-sil          #+#    #+#             */
-/*   Updated: 2026/05/11 12:38:13 by nbaz-sil         ###   ########.fr       */
+/*   Updated: 2026/05/13 22:31:41 by nbaz-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
-	unsigned int	i;
+	size_t	len;
 
 	i = 0;
 	while (src[i] && i < size)
@@ -48,7 +48,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	char dst1[5];
 	ft_strlcpy(dst, "hello", sizeof(dst));
 	strlcpy(dst1, "hello", sizeof(dst1));
-	printf("\nft_strlcpy's new string:%s\n", dst);
 	printf("strlcpy's new string:%s\n\n", dst1);
+	printf("\nft_strlcpy's new string:%s\n", dst);
 	return (0);
  } */

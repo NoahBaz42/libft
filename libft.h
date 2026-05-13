@@ -6,10 +6,9 @@
 /*   By: nbaz-sil <nbaz-sil@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/06 00:26:44 by nbaz-sil          #+#    #+#             */
-/*   Updated: 2026/05/11 16:33:46 by nbaz-sil         ###   ########.fr       */
+/*   Updated: 2026/05/13 19:35:54 by nbaz-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 #ifndef LIBFT_H
 # define LIBFT_H

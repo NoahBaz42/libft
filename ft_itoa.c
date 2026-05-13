@@ -6,7 +6,7 @@
 /*   By: nbaz-sil <nbaz-sil@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/06 00:28:20 by nbaz-sil          #+#    #+#             */
-/*   Updated: 2026/05/13 02:20:57 by nbaz-sil         ###   ########.fr       */
+/*   Updated: 2026/05/13 14:29:51 by nbaz-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ static void	ft_sortof_memset(int *i, char **s, char c)
 	(*i)++;
 }
 
-void	ft_sortof_putnbr(char *str, int nb, int *i)
+static void	ft_sortof_putnbr(char *str, int nb, int *i)
 {
 	long int	n;
 

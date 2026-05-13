@@ -6,7 +6,7 @@
 /*   By: nbaz-sil <nbaz-sil@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/06 00:28:24 by nbaz-sil          #+#    #+#             */
-/*   Updated: 2026/05/12 20:05:05 by nbaz-sil         ###   ########.fr       */
+/*   Updated: 2026/05/13 19:26:52 by nbaz-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 	Return Value: None
 	External Function: None  
 */
-
+/* 
 int	main(void) {
     t_list *lst = NULL;
     
@@ -53,3 +53,4 @@ int	main(void) {
     
     return (0);
 }
+ */

@@ -6,7 +6,7 @@
 /*   By: nbaz-sil <nbaz-sil@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/06 00:28:51 by nbaz-sil          #+#    #+#             */
-/*   Updated: 2026/05/13 00:43:08 by nbaz-sil         ###   ########.fr       */
+/*   Updated: 2026/05/13 19:06:16 by nbaz-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 		no = ft_lstnew(f(lst->content));
 		if (!no)
 		{
-			ft_lstclear(&nl, no);
+			ft_lstclear(&nl, del);
 			return (NULL);
 		}
 		ft_lstadd_back(&nl, no);

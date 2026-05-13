@@ -6,7 +6,7 @@
 /*   By: nbaz-sil <nbaz-sil@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/06 00:29:13 by nbaz-sil          #+#    #+#             */
-/*   Updated: 2026/05/11 13:52:12 by nbaz-sil         ###   ########.fr       */
+/*   Updated: 2026/05/13 22:10:04 by nbaz-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,8 +35,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	RETURN VALUE
 	The memcpy() function returns a pointer to dest.
 */
-/* 
-int	main(void)
+
+/* int	main(void)
 {
 	const void	*src = "vem de ca";
 	void		*dest[10] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
