@@ -6,7 +6,7 @@
 /*   By: nbaz-sil <nbaz-sil@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/06 00:28:17 by nbaz-sil          #+#    #+#             */
-/*   Updated: 2026/05/06 00:32:08 by nbaz-sil         ###   ########.fr       */
+/*   Updated: 2026/05/15 14:31:09 by nbaz-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,11 @@ int	ft_isprint(int c)
 /*
 	isprint() checks for any printable character
 	including space.
-	The values returned are nonzero if the character
-	c falls into the tested class, and zero if not.
- */
+	
+	The values returned are:
+	1 if the character c falls into the tested class;
+	0 if not.
+*/
 /* int	main(void)
 {
 	int	c = '?';
@@ -35,4 +37,5 @@ int	ft_isprint(int c)
 	printf("%d\n",ft_isprint(d));
 
 	return (0);
-} */
+} 
+*/

@@ -6,7 +6,7 @@
 /*   By: nbaz-sil <nbaz-sil@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/06 00:29:04 by nbaz-sil          #+#    #+#             */
-/*   Updated: 2026/05/06 06:56:31 by nbaz-sil         ###   ########.fr       */
+/*   Updated: 2026/05/15 00:25:11 by nbaz-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 
 	i = 0;
 	str = (unsigned char *) s;
-	while (i <= n)
+	while (i < n)
 	{
 		if (str[i] == (unsigned char) c)
 			return ((void *)&str[i]);
@@ -34,9 +34,8 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	to by s are interpreted as unsigned char.
 
 	RETURN VALUE
-	The  memchr() and memrchr() functions return a pointer
-	to the matching byte or NULL if the character does not
-	occur in the given memory area.
+	The  memchr() returns a pointer to the matching byte or
+	NULL if the character does not occur in the given memory area.
 */
 /* int	main(void)
 {

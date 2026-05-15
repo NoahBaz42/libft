@@ -6,7 +6,7 @@
 /*   By: nbaz-sil <nbaz-sil@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/06 00:29:32 by nbaz-sil          #+#    #+#             */
-/*   Updated: 2026/05/11 16:50:06 by nbaz-sil         ###   ########.fr       */
+/*   Updated: 2026/05/15 05:08:50 by nbaz-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 void	ft_putendl_fd(char *s, int fd)
 {
+	if (!s)
+		return ;
 	write (fd, s, ft_strlen(s));
 	write(fd, "\n", 1);
 }

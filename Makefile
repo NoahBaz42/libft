@@ -6,78 +6,70 @@
 #    By: nbaz-sil <nbaz-sil@student.42lisboa.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/04/25 11:52:18 by nbaz-sil          #+#    #+#              #
-#    Updated: 2026/05/13 22:22:10 by nbaz-sil         ###   ########.fr        #
+#    Updated: 2026/05/15 05:13:07 by nbaz-sil         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-# Variables
-
+CC = cc
+CFLAGS = -Wall -Wextra -Werror -g
 NAME = libft.a
-
-CC = cc -Wall -Wextra -Werror -g
-
-SRC = 	ft_isalpha.c		\
-		ft_bzero.c			\
-		ft_isalnum.c		\
-		ft_isdigit.c		\
-		ft_isascii.c		\
-		ft_calloc.c			\
-		ft_atoi.c			\
-		ft_isprint.c		\
-		ft_itoa.c 			\
-		ft_memchr.c			\
-		ft_memcmp.c			\
-		ft_memcpy.c			\
-		ft_memmove.c		\
-		ft_memset.c			\
-		ft_putchar_fd.c		\
-		ft_putendl_fd.c		\
-		ft_putnbr_fd.c		\
-		ft_putstr_fd.c		\
-		ft_split.c			\
-		ft_strchr.c			\
-		ft_strdup.c			\
-		ft_striteri.c		\
-		ft_strjoin.c		\
-		ft_strlcat.c		\
-		ft_strlcpy.c		\
-		ft_strlen.c			\
-		ft_strmapi.c		\
-		ft_strncmp.c		\
-		ft_strnstr.c		\
-		ft_strrchr.c		\
-		ft_strtrim.c		\
-		ft_substr.c			\
-		ft_tolower.c		\
-		ft_toupper.c		\
-		ft_lstadd_back.c	\
-		ft_lstadd_front.c	\
-		ft_lstclear.c		\
-		ft_lstdelone.c		\
-		ft_lstiter.c		\
-		ft_lstlast.c		\
-		ft_lstmap.c			\
-		ft_lstnew.c			\
-		ft_lstsize.c		\
-
+SRC = ft_atoi.c \
+	ft_bzero.c \
+	ft_calloc.c \
+	ft_isalnum.c \
+	ft_isalpha.c \
+	ft_isascii.c \
+	ft_isdigit.c \
+	ft_isprint.c \
+	ft_itoa.c \
+	ft_memchr.c \
+	ft_memcmp.c \
+	ft_memcpy.c \
+	ft_memmove.c \
+	ft_memset.c \
+	ft_putchar_fd.c \
+	ft_putendl_fd.c \
+	ft_putnbr_fd.c \
+	ft_putstr_fd.c \
+	ft_split.c \
+	ft_strchr.c \
+	ft_strdup.c \
+	ft_striteri.c \
+	ft_strjoin.c \
+	ft_strlcat.c \
+	ft_strlcpy.c \
+	ft_strlen.c \
+	ft_strmapi.c \
+	ft_strncmp.c \
+	ft_strnstr.c \
+	ft_strrchr.c \
+	ft_strtrim.c \
+	ft_substr.c \
+	ft_tolower.c \
+	ft_toupper.c \
+	
+BONUS_SRC = ft_lstadd_back.c \
+		ft_lstadd_front.c \
+		ft_lstclear.c \
+		ft_lstdelone.c \
+		ft_lstiter.c \
+		ft_lstlast.c \
+		ft_lstmap.c \
+		ft_lstnew.c \
+		ft_lstsize.c
 OBJ = $(SRC:.c=.o)
-
-# Rules  
-
+BONUS_OBJ = $(BONUS_SRC:.c=.o)
 all: $(NAME)
-
 $(NAME): $(OBJ)
-	ar rcs $(NAME) $(OBJ) 
-
-%.o: %.c
-	$(CC) -c $< -o $@
-
+	ar rcs $(NAME) $(OBJ)
+bonus: $(NAME) .bonusbonus
+.bonusbonus: $(OBJ) $(BONUS_OBJ)
+	ar rcs $(NAME) $(OBJ) $(BONUS_OBJ)
+	@touch .bonusbonus
 clean:
-	rm -rf $(OBJ)
-
+	rm -f $(OBJ) $(BONUS_OBJ) .bonusbonus
 fclean: clean
-	rm -rf $(NAME)
-
-re: fclean all
-
-.PHONY: all clean fclean re
+	rm -f $(NAME)
+re: fclean
+	make
+.PHONY: all clean fclean bonus re

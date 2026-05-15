@@ -6,7 +6,7 @@
 /*   By: nbaz-sil <nbaz-sil@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/06 00:29:24 by nbaz-sil          #+#    #+#             */
-/*   Updated: 2026/05/06 00:31:43 by nbaz-sil         ###   ########.fr       */
+/*   Updated: 2026/05/15 14:48:15 by nbaz-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,19 +28,21 @@ void	*ft_memset(void *s, int c, size_t n)
 }
 
 /*
-	The memset() function fills the first n bytes of the
+	The memset() function fills the >first< n bytes of the
 	memory area pointed to by s with the constant byte c.
-	The memset() function returns a pointer to the memory
-	area s.
+	
+	It returns a pointer to the memory area s.
 */
 /* int main(void)
 {
 	char str[6];
 	char ptr[6];
-	ft_memset((void*)str, 56, 5);
-	printf("%s\n", str);
-	memset((void*)ptr, 56, 5);
-	printf("%s\n", ptr);
+
+	memset((void*)str, 56, 5);
+	printf("og_memset:%s\n", str);
+	
+	ft_memset((void*)ptr, 56, 5);
+	printf("ft_memset:%s\n", ptr);
 
 	return(0);
 }

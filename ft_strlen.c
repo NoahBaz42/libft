@@ -6,7 +6,7 @@
 /*   By: nbaz-sil <nbaz-sil@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/06 00:30:19 by nbaz-sil          #+#    #+#             */
-/*   Updated: 2026/05/10 22:14:07 by nbaz-sil         ###   ########.fr       */
+/*   Updated: 2026/05/15 14:40:22 by nbaz-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,9 +25,11 @@ size_t	ft_strlen(const char *s)
 }
 
 /*
-	strlen() calculates the length of the string pointed to
-	by s, excluding the terminating null byte ('\0').
-	It returns the number of bytes in the string pointed to by s.
+	strlen() calculates the length of the string pointed
+	to by s, excluding the terminating null byte ('\0').
+	
+	It returns the number of bytes in the string
+	pointed to by s.
 */
 /* #include <stdio.h>
 

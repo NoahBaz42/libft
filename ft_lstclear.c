@@ -6,7 +6,7 @@
 /*   By: nbaz-sil <nbaz-sil@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/06 00:28:32 by nbaz-sil          #+#    #+#             */
-/*   Updated: 2026/05/13 19:27:32 by nbaz-sil         ###   ########.fr       */
+/*   Updated: 2026/05/15 11:44:13 by nbaz-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,15 +16,17 @@
 
 void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
-	t_list	*tp;
+	t_list	*node;
 
-	while (lst)
+	if (!lst || !*lst)
+		return ;
+	while (*lst)
 	{
-		tp = (*lst)->next;
-		ft_lstdelone(*lst, del);
-		*lst = tp;
+		node = (*lst)->next;
+		del((*lst)->content);
+		free(*lst);
+		*lst = node;
 	}
-	free(*lst);
 	*lst = NULL;
 }
 /*

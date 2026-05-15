@@ -6,7 +6,7 @@
 /*   By: nbaz-sil <nbaz-sil@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/06 00:28:14 by nbaz-sil          #+#    #+#             */
-/*   Updated: 2026/05/06 00:32:10 by nbaz-sil         ###   ########.fr       */
+/*   Updated: 2026/05/15 14:30:05 by nbaz-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,10 @@ int	ft_isdigit(int c)
 }
 /*
 	isdigit() checks for a digit (0 through 9).
-	The values returned are nonzero if the character c
-	falls into the tested class, and zero if not.
+	
+	The values returned are:
+	1 if the character c falls into the tested class;
+	0 if not.
  */
 
 /* int main(void)

@@ -6,7 +6,7 @@
 /*   By: nbaz-sil <nbaz-sil@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/06 00:30:44 by nbaz-sil          #+#    #+#             */
-/*   Updated: 2026/05/12 12:37:20 by nbaz-sil         ###   ########.fr       */
+/*   Updated: 2026/05/15 00:29:48 by nbaz-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	sub = malloc(len + 1);
 	if (!sub)
 		return (NULL);
-	ft_strlcpy(sub, s + start, len);
+	ft_strlcpy(sub, s + start, len + 1);
 	return (sub);
 }
 /*

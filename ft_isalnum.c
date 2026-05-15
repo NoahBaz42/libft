@@ -6,7 +6,7 @@
 /*   By: nbaz-sil <nbaz-sil@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/06 00:28:03 by nbaz-sil          #+#    #+#             */
-/*   Updated: 2026/05/13 19:25:17 by nbaz-sil         ###   ########.fr       */
+/*   Updated: 2026/05/15 14:27:50 by nbaz-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,10 @@ int	ft_isalnum(int c)
 
 /*
 	isalnum() checks for an alphanumeric character.
-	The values returned are nonzero if the character c
-	falls into the tested class, and zero if not.
+	
+	The values returned are: 
+	1 if the character c falls into the tested class;
+	0 if not.
  */
 
 /*  int main(void)
@@ -33,7 +35,6 @@ int	ft_isalnum(int c)
 	int c = 'a';
 	int d = '1';
 	int e = ';';
-
 
 	printf("%d\n",ft_isalnum(c));
 	printf("%d\n",ft_isalnum(d));

@@ -6,7 +6,7 @@
 /*   By: nbaz-sil <nbaz-sil@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/06 00:28:51 by nbaz-sil          #+#    #+#             */
-/*   Updated: 2026/05/13 19:06:16 by nbaz-sil         ###   ########.fr       */
+/*   Updated: 2026/05/15 11:53:29 by nbaz-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,24 +14,27 @@
 
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
-	t_list	*nl;
-	t_list	*no;
+	t_list	*node;
+	t_list	*new_l;
+	void	*items;
 
 	if (!lst || !f || !del)
 		return (NULL);
-	nl = NULL;
+	new_l = NULL;
 	while (lst)
 	{
-		no = ft_lstnew(f(lst->content));
-		if (!no)
+		items = f(lst->content);
+		node = ft_lstnew(items);
+		if (!node)
 		{
-			ft_lstclear(&nl, del);
+			del(items);
+			ft_lstclear(&new_l, del);
 			return (NULL);
 		}
-		ft_lstadd_back(&nl, no);
+		ft_lstadd_back(&new_l, node);
 		lst = lst->next;
 	}
-	return (nl);
+	return (new_l);
 }
 /* 
 	Iterates through the list ’lst’, applies the

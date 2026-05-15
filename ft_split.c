@@ -6,7 +6,7 @@
 /*   By: nbaz-sil <nbaz-sil@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/06 00:29:45 by nbaz-sil          #+#    #+#             */
-/*   Updated: 2026/05/13 19:33:28 by nbaz-sil         ###   ########.fr       */
+/*   Updated: 2026/05/15 05:56:57 by nbaz-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,16 +33,17 @@ static size_t	the_words(const char *s, char c)
 
 static void	free_them(char **ar_ar, int j)
 {
+	if (!ar_ar)
+		return ;
 	while (j > 0)
 	{
 		j--;
 		free(ar_ar[j]);
 	}
-	if (j == 0)
-		free(ar_ar);
+	free(ar_ar);
 }
 
-static char	**the_lett_aloc(const char *s, char c, char **ar_ar, int j)
+static void	the_lett_aloc(const char *s, char c, char **ar_ar, int j)
 {
 	size_t	start;
 	size_t	len;
@@ -57,18 +58,18 @@ static char	**the_lett_aloc(const char *s, char c, char **ar_ar, int j)
 		if (s[i] && s[i] != c)
 		{
 			start = i;
-			while (s[i] != c)
+			while (s[i] && s[i] != c)
 			{
 				len++;
 				i++;
 			}
 			ar_ar[j] = ft_substr(s, start, len);
 			if (!ar_ar[j])
-				free_them(ar_ar, j);
+				return (free_them(ar_ar, j));
 			j++;
 		}
 	}
-	return (ar_ar);
+	ar_ar[j] = NULL;
 }
 
 char	**ft_split(char const *s, char c)
@@ -88,7 +89,8 @@ char	**ft_split(char const *s, char c)
 		return (ar_ar);
 	}
 	the_lett_aloc(s, c, ar_ar, 0);
-	ar_ar[words] = NULL;
+	if (!ar_ar)
+		return (NULL);
 	return (ar_ar);
 }
 
@@ -106,8 +108,8 @@ char	**ft_split(char const *s, char c)
 	
 	Return Value: The array of new strings
 	resulting from the split.
-	NULL if any allocation fails.
 	
+	NULL if any allocation fails.
 	The returned structure will be released using:
 	1) free() on each string in the array;
 	2) free() the array itself.
@@ -135,4 +137,10 @@ char	**ft_split(char const *s, char c)
         free(array[i]);
     free(array);
     return (0);
+} */
+
+/* int main()
+{
+	char **str = ft_split("xxxxxxxxhello!", 'x');
+	
 } */

@@ -6,7 +6,7 @@
 /*   By: nbaz-sil <nbaz-sil@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/06 00:29:49 by nbaz-sil          #+#    #+#             */
-/*   Updated: 2026/05/12 12:09:33 by nbaz-sil         ###   ########.fr       */
+/*   Updated: 2026/05/15 01:10:16 by nbaz-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_strchr(const char *s, int c)
 			return ((char *)s);
 		s++;
 	}
-	if (c == '\0')
+	if (*s == (char) c)
 		return ((char *)s);
 	return (NULL);
 }
@@ -37,7 +37,7 @@ char	*ft_strchr(const char *s, int c)
 /*  int main(void)
  {
 	const char *str = "panadanada";
-	int c = '\0';
+	int c = 'd';
 	printf("\n%s\n", ft_strchr(str, c));
 	printf("%s\n", strchr(str, c));
 

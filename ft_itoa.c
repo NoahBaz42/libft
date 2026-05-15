@@ -6,7 +6,7 @@
 /*   By: nbaz-sil <nbaz-sil@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/06 00:28:20 by nbaz-sil          #+#    #+#             */
-/*   Updated: 2026/05/13 14:29:51 by nbaz-sil         ###   ########.fr       */
+/*   Updated: 2026/05/15 14:36:34 by nbaz-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,7 +74,7 @@ char	*ft_itoa(int n)
 	Allocates memory (using malloc(3)) and returns
 	a string representing the integer received as an
 	argument.
-	Negative numbers must be handled
+	Negative numbers must be handled.
 	
 	Return Value: The string representing the integer.
 	NULL if the allocation fails.

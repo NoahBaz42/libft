@@ -6,7 +6,7 @@
 /*   By: nbaz-sil <nbaz-sil@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/06 00:30:37 by nbaz-sil          #+#    #+#             */
-/*   Updated: 2026/05/12 17:41:47 by nbaz-sil         ###   ########.fr       */
+/*   Updated: 2026/05/15 11:21:19 by nbaz-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,18 +14,20 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	char	*str;
-	int		i;
+	const char	*str;
+	int			i;
 
 	str = NULL;
-	i = ft_strlen(s);
-	while (i >= 0)
+	i = 0;
+	while (s[i])
 	{
-		if (s[i] == (char) c)
-			str = ((char *)&s[i]);
-		i--;
+		if (s[i] == (unsigned char)c)
+			str = (char *)&s[i];
+		i++;
 	}
-	return (str);
+	if ((unsigned char)c == '\0')
+		return ((char *)&s[i]);
+	return ((char *)str);
 }
 /*
 	The strrchr() function returns a pointer to the **last**
@@ -39,15 +41,15 @@ char	*ft_strrchr(const char *s, int c)
 /*  int main(void)
  {
 	const char str[] = "panadanada";
-	int c = '\0';
+	int c = 'n';
 
 	char *out_a;
 	char *out_b;
 
 	out_a = ft_strrchr(str, c);
 	out_b = strrchr(str, c);
-	printf("[%p] %s\n", (void *)out_a, out_a);
-	printf("[%p] %s\n", (void *)out_b, out_b);
+	printf("[%p] %s\n", out_a, out_a);
+	printf("[%p] %s\n", out_b, out_b);
 
 	return (0);
  } */

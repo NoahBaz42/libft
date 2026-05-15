@@ -6,7 +6,7 @@
 /*   By: nbaz-sil <nbaz-sil@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/06 00:29:18 by nbaz-sil          #+#    #+#             */
-/*   Updated: 2026/05/11 14:41:12 by nbaz-sil         ###   ########.fr       */
+/*   Updated: 2026/05/15 14:57:58 by nbaz-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,22 +31,25 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	return (dest);
 }
 /*
-	The  memmove()  function  copies n bytes from memory area src
-	to memory area dest.  The memory areas may overlap: copying
-	takes place as though the bytes in src are first copied into a
-	temporary array that does not overlap src or dest, and the 
-	bytes are then copied from  the  temporary array to dest.
+	The memmove() copies n bytes from memory area src
+	to memory area dest. The memory areas may overlap:
+	copying takes place as though the bytes in src are
+	first copied into a >temporary array< that does not
+	overlap src or dest, and the bytes are then copied
+	from the temporary array to dest.
 	
-	If the destination address is greater than the source address,
-	memmove performs a forward copy. This means it starts copying
-	from the end of the source to the beginning of the destination.
+	If the destination address is +greater+ than the source
+	address, it performs a forward copy. This means it
+	starts copying from the end of the source to the
+	beginning of the destination.
 	This prevents overwriting data that has yet to be copied.
 	
-	If the destination address is less than the source address,
-	memmove performs a backward copy. This means it starts copying 
-	from the beginning of the source to the end of the destination.
-	This ensures that the original data remains intact, even as it’s
-	being copied over.
+	If the destination address is -less- than the source
+	address, it performs a backward copy. This means it
+	starts copying from the beginning of the source to the
+	end of the destination.
+	This ensures that the original data remains intact,
+	even as it’s being copied over.
 
 	RETURN VALUE
 	The memmove() function returns a pointer to dest.
