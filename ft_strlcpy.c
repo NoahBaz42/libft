@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nbaz-sil <nbaz-sil@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: noah-baz <noah-baz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/06 00:30:13 by nbaz-sil          #+#    #+#             */
-/*   Updated: 2026/05/14 22:35:09 by nbaz-sil         ###   ########.fr       */
+/*   Updated: 2026/05/16 18:53:27 by noah-baz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,18 +29,19 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 }
 
 /* 
-	The strlcpy() function copy the string src to dst. It is designed 
-	to be safer, more consistent, and less error prone replacement 
-	for strncpy(3).Unlike them, strlcpy() takes the full size of the
-	buffer(not just the length) and guarantee to NUL-terminate the
-	result(as long as size is larger than 0). Note that a byte for
-	the NULL should be included in size.
-	The strlcpy() function copies up to size - 1 characters from 
-	the NUL-terminated string src to dst, NUL-terminating the result.
+	Strlcpy() function copy the string src to dst.
+	It takes the full size of the buffer(not just the length)
+	and guarantee to NUL-terminate the result(as long as
+	size is larger than 0).
+	
+	Note that a byte for the NULL should be included in size.
+	
+	Strlcpy() copies up to size - 1 characters from the
+	NUL-terminated string src to dst,NUL-terminating the result.
 	
 	RETURN VALUES
-	The strlcpy() returnS the total length of the string they tried
-	to create, that means the length of src.
+	The strlcpy() returns the total length of the string
+	they tried to create, that means the length of src.
 */
 /* #include <bsd/string.h>
 

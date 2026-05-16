@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nbaz-sil <nbaz-sil@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: noah-baz <noah-baz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/06 00:29:52 by nbaz-sil          #+#    #+#             */
-/*   Updated: 2026/05/13 19:33:50 by nbaz-sil         ###   ########.fr       */
+/*   Updated: 2026/05/16 19:21:49 by noah-baz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,8 +47,8 @@ char	*ft_strdup(const char *s)
 	char * str2;
 	str1 = ft_strdup(str);
 	str2 = strdup(str);
-	printf("\nft_strdup:\nSource string:%s\nNew    string:%s\n", str, str1);
-	printf("\nstrdup:\nSource string:%s\nNew    string:%s\n", str, str2);
+	printf("\nft_strdup:\nSource string:%s\nNew string:%s\n", str, str1);
+	printf("\nstrdup:\nSource string:%s\nNew string:%s\n", str, str2);
 
 	free(str1);
 	free(str2);

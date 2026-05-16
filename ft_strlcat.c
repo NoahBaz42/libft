@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nbaz-sil <nbaz-sil@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: noah-baz <noah-baz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/06 00:30:09 by nbaz-sil          #+#    #+#             */
-/*   Updated: 2026/05/11 16:20:34 by nbaz-sil         ###   ########.fr       */
+/*   Updated: 2026/05/16 18:59:27 by noah-baz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,13 +36,15 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 }
 
 /*
-	The strlcat() function concatenate strings. They are designed to
-	be safer, more consistent, and less error prone replacements for
-	strncat(3).it takes the full size of the buffer (not just the
-	length) and guarantee to NUL-terminate the result (as long as 
-	there is at least one byte free in dst). Note that a byte for
-	the NULL should be included in size.For strlcat() both src and
-	dst must be NUL-terminated.
+	The strlcat() function concatenate strings. It takes the full
+	size of the buffer (not just the length) and guarantee to
+	NUL-terminate the result (as long as there is at least
+	one byte free in dst).
+	
+	Note that a byte for the NULL should be included in size.
+	
+	For strlcat() both src and dst must be NUL-terminated.
+	
 	The	strlcat(void) function appends the NUL-terminated string src
 	to the end of dst. It will append at most size - strlen(dst) - 1
 	bytes, NUL-terminating the result.
@@ -50,8 +52,10 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	RETURN VALUES
 	The strlcat() function returns the total length of the string
 	it tried to create.That means the initial length of dst plus the length of
-	src.  While this may seem somewhat confusing,
-	it was done to make truncation detection simple.
+	src.
+	
+	If the return value is >= size,
+	the output string has been truncated.
 */
 /* #include <bsd/string.h>
 

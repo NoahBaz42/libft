@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nbaz-sil <nbaz-sil@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: noah-baz <noah-baz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/06 00:29:04 by nbaz-sil          #+#    #+#             */
-/*   Updated: 2026/05/15 00:25:11 by nbaz-sil         ###   ########.fr       */
+/*   Updated: 2026/05/16 19:16:53 by noah-baz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,9 +28,9 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	return (NULL);
 }
 /*
-	The  memchr()  function  scans  the initial n bytes of 
+	The memchr()  function  scans  the initial n bytes of 
 	the memory area pointed to by s for the first instance
-	of c.  Both c and the bytes  of the memory area pointed 
+	of c. Both c and the bytes  of the memory area pointed 
 	to by s are interpreted as unsigned char.
 
 	RETURN VALUE
